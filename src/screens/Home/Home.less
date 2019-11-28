@@ -1,5 +1,145 @@
-.nav-contianer {
-  background: #111;
-  height: 39px;
+.header-contianer {
+  z-index: 9;
+  .contianer-box {
+    z-index: 9;
+    background: #111;
+    height: 100px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+  .cover-box {
+    width: 100%;
+    height: 100px;
+  }
   
+  .module-center-contianer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .nav-logo {
+    width: 204px;
+    height: 60px;
+  }
+  .nav-list {
+    display: flex;
+    margin-right: -20px;
+    .nav-item {
+      color: #fff;
+      font-size: 20px;
+      line-height: 100px;
+      padding: 0 20px;
+      cursor: pointer;
+      &:hover{
+        color: #999;
+      }
+    }
+  }
+}
+
+.home-mudule-contianer {
+  height: 690px;
+  overflow: hidden;
+  position: relative;
+  &.mudule1 {
+    background: #111;
+    width: 100%;
+    height: 590px;
+  }
+  &.mudule2 {
+    background: #fff;
+    width: 100%;
+  }
+  .action-image {
+    width: 300px;
+    height: 526px;
+    bottom: 0;
+    transition: all .5s;
+    transform: translate(0, 5%);
+    // &.active {
+    //   transform: translate(0, 5%);
+    // }
+    &:hover {
+      transform: translate(0, 0);
+    }
+  }
+  .home-wechat-home-image {
+    position: absolute;
+    right: 16px;
+  }
+  .home-wechat-wash-image {
+    position: absolute;
+    left: 0;
+  }
+
+  .mudule-left {
+    padding-top: 170px;
+    color: #fff;
+    .title {
+      font-size: 56px;
+      line-height: 80px;
+    }
+    .home-qrcode {
+      width: 140px;
+      height: 140px;
+      margin-top: 10px;
+    }
+  }
+  .mudule-right {
+    float: right;
+    padding-top: 164px;
+    .title {
+      color: #000;
+      font-size: 56px;
+      line-height: 1;
+    }
+    .desc {
+      font-size: 24px;
+      color: #666;
+      line-height: 1;
+      margin-top: 24px;
+      span {
+        padding-top: 33px;
+        display: block;
+      }
+    }
+    .shoes-list {
+      position: absolute;
+      right: 0;
+      bottom: 65px;
+      display: flex;
+      .shoes-item {
+        width: 200px;
+        height: 150px;
+        margin-left: 20px;
+        transition: all 0.4;
+        &:hover {
+          transform: scale(1.01)
+        }
+        &:nth-child(1)  {
+          background: url('../../static/images/home-shoes1.png');;
+        }
+        &:nth-child(2)  {
+          background: url('../../static/images/home-shoes2.png');;
+        }
+        &:nth-child(3)  {
+          background: url('../../static/images/home-shoes3.png');;
+        }
+      }
+    }
+  }
+}
+
+.footer-contianer {
+  background: #111;
+  color: #fff;
+  font-size: 14px;
+  line-height: 26px;
+  padding: 75px 0;
+  text-align: center;
+  .f-customer-service {
+    margin-top: 20px;
+  }
 }

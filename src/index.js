@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.less';
+import './styles/index.less';
 import { renderRoutes } from 'react-router-config';
 import routes from './router/index'
 import { BrowserRouter } from 'react-router-dom'
