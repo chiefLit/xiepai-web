@@ -76,11 +76,11 @@ export default class Home extends Component {
           <div className="module-center-contianer">
             <img className="nav-logo" src={navLogoImage} alt="logo" />
             <div className="nav-list">
-              {
+              {/* {
                 this.navlist.map(ele => {
                   return <div className="nav-item" key={ele.name}>{ele.name}</div>
                 })
-              }
+              } */}
             </div>
           </div>
         </div>
@@ -95,7 +95,7 @@ export default class Home extends Component {
         <div className="module-center-contianer">
           <div className="f-company-name">杭州丝内刻科技有限公司</div>
           <div className="f-company-limited">Hangzhou Shineike Information Technology Co., Ltd</div>
-          <div className="f-partners">合作伙伴 <a href="https://www.kuaidi100.com/" target="_blank" rel="noopener noreferrer">快递100</a></div>
+          {/* <div className="f-partners">合作伙伴 <a href="https://www.kuaidi100.com/" target="_blank" rel="noopener noreferrer">快递100</a></div> */}
           <div className="f-record-cord">浙ICP备19047226号</div>
 
           <div className="f-customer-service">客服热线:186 6822 3132(工作时间 9:00-18:00)</div>
